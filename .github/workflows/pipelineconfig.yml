@@ -1,19 +1,19 @@
 name: Input Workflow
 on:
-  workflow_call:
-      outputs:
+ workflow_call: 
+    outputs:
          pipelineType:
-            value: 'awslambda'
+             value: 'awslambda'
          language:
-            value: 'java'
+             value: 'java'
          javaVersion:
-            value: '1.8'
+             value: '1.8'
          buildTool: 
-            value: 'npm'
+             value: 'npm'
          appName: 
-            value: 'abc'
+             value: 'abc'
          fileExtension:
-            value: 'jar'
+             value: 'jar'
          
 jobs:
    job1:
