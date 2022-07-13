@@ -1,0 +1,23 @@
+name: Input Workflow
+on:
+  workflow_call:
+      outputs:
+         pipelineType:
+            value: 'awslambda'
+         language:
+            value: 'java'
+         javaVersion:
+            value: '1.8'
+         buildTool: 
+            value: 'npm'
+         appName: 
+            value: 'abc'
+         fileExtension:
+            value: 'jar'
+         
+jobs:
+   job1:
+      runs-on: ubuntu-latest
+      steps:
+         - name: Inputs
+           run: echo 'Inputs Provided'
